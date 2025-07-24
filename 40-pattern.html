@@ -1,0 +1,59 @@
+<!--Add input validation using pattern attribute-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input validation</title>
+</head>
+<h1>validation form using pattern</h1>
+<body>
+    <form>
+
+        <div>
+            <!--Enter first and last name seprated by one space-->
+          <label for ="name">Name :</label>
+          <input type="text" id="name" placeholder="Enter your full name"pattern="[A-Za-z ]+"><br>
+          <small>(Enter first and last name seprated by one space)</small>
+        </div><br><br>
+
+        <div>
+            <!--cobination of Alphabets and digit-->
+            <label for="username">Username:</label>
+            <input type="text" id="username"placeholder="username" pattern="[A-Za-Z0-9]"><br>
+            <small>(cobination of Alphabets and digit<)</small>
+        </div><br><br>
+
+        <div>
+            <!--Email pattern-->
+            <label for="email">Email:</label>
+            <input type="text" id="email"placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$>"><br>
+            <small>(Email pattern)</small>
+        </div><br><br>
+
+        <div>
+            <!-start with 6 to 9 and it have exact 10 digit only-->
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone"placeholder="phone" pattern="[6-9]\d{9}"><br>
+            <small>(start with 6 to 9 and it have exact 10 digit only)</small>
+        </div><br><br>
+
+        <div>
+            <!--At least 8 characters: letters and numbers only-->
+            <label for="password">Password:</label>
+            <input type="password" id="password"placeholder="password" pattern="[A-Za-z\d]{8,}"><br>
+            <small>(At least 8 characters: letters and numbers only)</small>
+        </div><br><br>
+
+        <div>
+            <label for="pin code">PIN code:</label>
+            <input type="text" id="pin code"placeholder="pin code" pattern="\d{6}"><br>
+            <small>(in 6 digits enter)</small>
+        </div><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
